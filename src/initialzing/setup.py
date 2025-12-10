@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'init_dev = initialzing.init_dev:main',
+            'pub_cam = initialzing.pub_cam:main',
         ],
     },
 )

@@ -1,6 +1,7 @@
 """
-@作者: Jing Mi
-@说明: 初始化设备
+@Author:        Hmmmi
+@Description:   initialzing devices of miniClawzy
+@Created Date:  2025-12-09
 """
 
 import rclpy
