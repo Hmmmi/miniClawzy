@@ -24,10 +24,12 @@ pwm_start_positions = [
 """
 def init_pwm_positions():
     board = Board()
-    for position in reversed(pwm_start_positions):
-        board.pwm_servo_set_position(2, [position])
-        print(f'init pwm {position}')
-        time.sleep(2)
+    board.pwm_servo_set_position(1, pwm_start_positions)
+    time.sleep(1.5)
+    # for position in reversed(pwm_start_positions):
+    #     board.pwm_servo_set_position(1, [position])
+    #     print(f'init pwm {position}')
+    #     time.sleep(1)
 
 def main(args=None):                                    # ROS2节点主入口 main函数
     rclpy.init(args=args)                               # ROS2 Python接口初始化
